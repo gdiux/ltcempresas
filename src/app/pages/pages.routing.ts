@@ -28,12 +28,8 @@ const routes: Routes = [
         children:
         [
           { path: '', component: DashboardComponent, data:{ title: 'Dashboard' } },
-          { path: 'clientes', component: ClientesComponent, data:{ title: 'Clientes' } },
-          { path: 'correctivos', component: CorrectivosComponent, data:{ title: 'Correctivos' } },
           { path: 'correctivo/:id', component: CorrectivoComponent, data:{ title: 'Correctivo' } },
-          { path: 'preventivos', component: PreventivosComponent, data:{ title: 'Preventivos' } },
           { path: 'preventivo/:id', component: PreventivoComponent, data:{ title: 'Preventivo' } },
-          { path: 'productos', component: ProductosComponent, data:{ title: 'Productos' } },
           { path: 'producto/:id', component: ProductoComponent, data:{ title: 'Producto' } },
           { path: 'perfil/:id', component: PerfilComponent, data:{ title: 'Perfil' } },
           { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
